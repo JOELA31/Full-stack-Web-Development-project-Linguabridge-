@@ -1,15 +1,15 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Languages, Sparkles, Settings, Check, AlertCircle } from 'lucide-react';
 import { supabase, Conversation, Message } from '@/lib/supabase';
-import { detectLanguage } from '@/services/languageDetection';
-import { translateText, saveToMemory } from '@/services/translationService';
-import { generateReply, suggestConversationTitle } from '@/services/llmService';
+import { detectLanguage } from '@/services/languagedetection';
+import { translateText, saveToMemory } from '@/services/translationservice';
+import { generateReply, suggestConversationTitle } from '@/services/llmservice';
 import { retrieveRelevantTranslations } from '@/services/ragService';
-import { useVoice, toSpeechLangCode } from '@/hooks/useVoice';
-import { checkApiKey, KeyStatus } from '@/services/apiKeyService';
-import ControlBar from '@/components/ControlBar';
-import ChatWindow from '@/components/ChatWindow';
-import ChatInput from '@/components/ChatInput';
+import { useVoice, toSpeechLangCode } from '@/hooks/usevoice';
+import { checkApiKey, KeyStatus } from '@/services/apikeyservice';
+import ControlBar from '@/components/controlbar';
+import ChatWindow from '@/components/chatwindow';
+import ChatInput from '@/components/chatinput';
 import SettingsModal from '@/components/SettingsModal';
 
 function App() {

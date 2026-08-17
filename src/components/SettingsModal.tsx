@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { X, Key, Check, AlertCircle, Loader2, Trash2, ExternalLink } from 'lucide-react';
-import { checkApiKey, saveApiKey, deleteApiKey, KeyStatus, Provider } from '@/services/apiKeyService';
+import { checkApiKey, saveApiKey, deleteApiKey, KeyStatus, Provider } from '@/services/apikeyservice';
 
 interface SettingsModalProps {
   isOpen: boolean;
