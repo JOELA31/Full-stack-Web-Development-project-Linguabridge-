@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cream-50: #FAF8F5;
+  --color-cream-100: #F5F2EE;
+  --color-cream-200: #F0EDE8;
+  --color-lavender-100: #F0EDF7;
+  --color-lavender-200: #E8E4EF;
+  --color-lavender-300: #DDD7E8;
+  --color-lavender-400: #B8A9D9;
+  --color-lavender-500: #9B86C9;
+  --color-lavender-600: #7C6BAA;
+  --color-ink-900: #3D3A36;
+  --color-ink-700: #5C5750;
+  --color-ink-500: #7A756D;
+  --color-ink-400: #9C9690;
+  --color-ink-300: #B5B0AA;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #FAF8F5;
+    color: #3D3A36;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(155, 134, 201, 0.25);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(155, 134, 201, 0.4);
+  }
+
+  select option {
+    background: #FFFFFF;
+    color: #3D3A36;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
